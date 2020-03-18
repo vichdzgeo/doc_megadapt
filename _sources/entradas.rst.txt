@@ -14,23 +14,3 @@ Entradas
 
 
 
-
-capa geografica
------------------
-
-|Cirterio| gpkg campo| Columna modelo| Miniatura| min|max|issue|
-|---|---|---|--|---|---|---|
-|1|1|1|1|1|1|1|
-
-
-
-Funciones de valor
--------------------
-
-
-
-Escenarios de escorrentía 
-----------------------------
-
-
-
