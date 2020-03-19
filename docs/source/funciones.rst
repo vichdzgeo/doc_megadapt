@@ -50,6 +50,7 @@ Funciones de valor
         :height: 100pt
 
 
+Las funciones de valor se aplican a cada uno de los criterios del estado inicial o capas geográficas para transformar los valores de una escala natural a una escala de cociente. Las funciones específicas que se aplican a cada criterio representan la connotación que los distintos valores de los criterios tienen para los agentes del modelo.
 
 
 +---------------------+------------------------+------------------+------------------+---------------+
@@ -91,9 +92,13 @@ Funciones de valor
 |                     | | min=0                |                  |                  |               |
 |                     | |                      |                  |                  |               |
 +---------------------+------------------------+------------------+------------------+---------------+
-|                     | | convexa_creciente    | |g_falla_escasez|| |m_falla_escasez||               |
-|peticion_delegaciones| | gama=0.01975         |                  |                  |               |
-|                     | | max=348.395          |                  |                  |               |
-|                     | | min=0                |                  |                  |               |
-|                     | |                      |                  |                  |               |
+|peticion_delegaciones|         1 - x          |                  |                  |  capa de 1s   |
++---------------------+------------------------+------------------+------------------+---------------+
+|   basura            | value_funtions.R 110   |                  |                  |               |
++---------------------+------------------------+------------------+------------------+---------------+
+|   falla_dist        | value_funtions.R 126   |                  |                  |               |
++---------------------+------------------------+------------------+------------------+---------------+
+|   salud             | value_funtions.R 136   |                  |                  |               |
++---------------------+------------------------+------------------+------------------+---------------+
+|   salud             | value_funtions.R 136   |                  |                  |               |
 +---------------------+------------------------+------------------+------------------+---------------+
