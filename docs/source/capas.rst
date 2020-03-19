@@ -1,5 +1,6 @@
 Capas geográficas
 ======================
+Las capas geográficas representan el estado inicial de las unidades geográficas del modelo en este caso AGEBS. El estado inicial se conforma de los distintos criterios que los agentes necesitan para tomar sus decisiones en cada ciclo del modelo.
 
 +-----------+------------------------------------------------------------+-----------+-------------+-------+
 | Miniatura |                           Campo                            |    Min    |     Max     | issue |
@@ -266,4 +267,3 @@ Capas geográficas
 
 
 .. _md40: http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/f2fa0db3-cbec-4989-ac1d-0ebb63e5e8a7
-
