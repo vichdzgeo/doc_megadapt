@@ -1,102 +1,6 @@
 Funciones de valor
 ===============================
 
-.. |g_antiguedad_d| image:: /fv_images/g_antiguedad_d.png
-   :width: 100pt
-   :height: 100pt
-
-.. |m_antiguedad_d| image:: /fv_images/m_antiguedad_d.png
-    :width: 100pt
-    :height: 100pt
-
-.. |g_antiguedad_p| image:: /fv_images/g_antiguedad_p.png
-   :width: 100pt
-   :height: 100pt
-
-.. |m_antiguedad_p| image:: /fv_images/m_antiguedad_p.png
-    :width: 100pt
-    :height: 100pt
-
-.. |g_calidad_agua| image:: /fv_images/g_calidad_agua.png
-   :width: 100pt
-   :height: 100pt
-
-.. |m_calidad_agua| image:: /fv_images/m_calidad_agua.png
-    :width: 100pt
-    :height: 100pt
-
-.. |g_pres_hid| image:: /fv_images/g_pres_hid.png
-   :width: 100pt
-   :height: 100pt
-
-.. |m_pres_hid| image:: /fv_images/m_pres_hid.png
-    :width: 100pt
-    :height: 100pt
-
-.. |g_subsidencia| image:: /fv_images/g_subsidencia.png
-   :width: 100pt
-   :height: 100pt
-
-.. |m_subsidencia| image:: /fv_images/m_subsidencia.png
-    :width: 100pt
-    :height: 100pt
-
-.. |g_falla_escasez| image:: /fv_images/g_falla_escasez.png
-       :width: 100pt
-       :height: 100pt
-
-.. |m_falla_escasez| image:: /fv_images/m_falla_escasez.png
-        :width: 100pt
-        :height: 100pt
-
-
-
-
-
-.. |g_escasez_cz| image:: /fv_images/g_escasez_cz.png
-       :width: 100pt
-       :height: 100pt
-
-.. |m_escasez_cz| image:: /fv_images/m_escasez_cz.png
-        :width: 100pt
-        :height: 100pt
-
-.. |g_escasez_ph| image:: /fv_images/g_escasez_ph.png
-       :width: 100pt
-       :height: 100pt
-
-.. |m_escasez_ph| image:: /fv_images/m_escasez_ph.png
-        :width: 100pt
-        :height: 100pt
-
-.. |g_escasez_fd| image:: /fv_images/g_escasez_fd.png
-       :width: 100pt
-       :height: 100pt
-
-.. |m_escasez_fd| image:: /fv_images/m_escasez_fd.png
-        :width: 100pt
-        :height: 100pt
-
-.. |g_escasez_dsa| image:: /fv_images/g_escasez_dsa.png
-       :width: 100pt
-       :height: 100pt
-
-.. |m_escasez_dsa| image:: /fv_images/m_escasez_dsa.png
-        :width: 100pt
-        :height: 100pt
-
-.. |g_escasez_ant| image:: /fv_images/g_escasez_ant.png
-       :width: 100pt
-       :height: 100pt
-
-.. |m_escasez_ant| image:: /fv_images/m_escasez_ant.png
-        :width: 100pt
-        :height: 100pt
-
-
-
-
-
 Las funciones de valor se aplican a cada uno de los criterios del estado inicial o capas geográficas para transformar los valores de una escala natural a una escala de cociente. Las funciones específicas que se aplican a cada criterio representan la connotación que los distintos valores de los criterios tienen para los agentes del modelo.
 
 Funciones de valor para el agente SACMEX:
@@ -233,3 +137,99 @@ Funciones de valor para los índices de escasez:
 +---------------------+------------------------+------------------+------------------+---------------+
 
 `critical_zones <http://gvf.magrat.mine.nu/critical_zones/logistica_invertida/?center=0.2&k=0.255&show_map=True&max=1&min=0>`_
+
+
+.. |g_antiguedad_d| image:: /fv_images/g_antiguedad_d.png
+   :width: 100pt
+   :height: 100pt
+
+.. |m_antiguedad_d| image:: /fv_images/m_antiguedad_d.png
+    :width: 100pt
+    :height: 100pt
+
+.. |g_antiguedad_p| image:: /fv_images/g_antiguedad_p.png
+   :width: 100pt
+   :height: 100pt
+
+.. |m_antiguedad_p| image:: /fv_images/m_antiguedad_p.png
+    :width: 100pt
+    :height: 100pt
+
+.. |g_calidad_agua| image:: /fv_images/g_calidad_agua.png
+   :width: 100pt
+   :height: 100pt
+
+.. |m_calidad_agua| image:: /fv_images/m_calidad_agua.png
+    :width: 100pt
+    :height: 100pt
+
+.. |g_pres_hid| image:: /fv_images/g_pres_hid.png
+   :width: 100pt
+   :height: 100pt
+
+.. |m_pres_hid| image:: /fv_images/m_pres_hid.png
+    :width: 100pt
+    :height: 100pt
+
+.. |g_subsidencia| image:: /fv_images/g_subsidencia.png
+   :width: 100pt
+   :height: 100pt
+
+.. |m_subsidencia| image:: /fv_images/m_subsidencia.png
+    :width: 100pt
+    :height: 100pt
+
+.. |g_falla_escasez| image:: /fv_images/g_falla_escasez.png
+       :width: 100pt
+       :height: 100pt
+
+.. |m_falla_escasez| image:: /fv_images/m_falla_escasez.png
+        :width: 100pt
+        :height: 100pt
+
+
+
+
+
+.. |g_escasez_cz| image:: /fv_images/g_escasez_cz.png
+       :width: 100pt
+       :height: 100pt
+
+.. |m_escasez_cz| image:: /fv_images/m_escasez_cz.png
+        :width: 100pt
+        :height: 100pt
+
+.. |g_escasez_ph| image:: /fv_images/g_escasez_ph.png
+       :width: 100pt
+       :height: 100pt
+
+.. |m_escasez_ph| image:: /fv_images/m_escasez_ph.png
+        :width: 100pt
+        :height: 100pt
+
+.. |g_escasez_fd| image:: /fv_images/g_escasez_fd.png
+       :width: 100pt
+       :height: 100pt
+
+.. |m_escasez_fd| image:: /fv_images/m_escasez_fd.png
+        :width: 100pt
+        :height: 100pt
+
+.. |g_escasez_dsa| image:: /fv_images/g_escasez_dsa.png
+       :width: 100pt
+       :height: 100pt
+
+.. |m_escasez_dsa| image:: /fv_images/m_escasez_dsa.png
+        :width: 100pt
+        :height: 100pt
+
+.. |g_escasez_ant| image:: /fv_images/g_escasez_ant.png
+       :width: 100pt
+       :height: 100pt
+
+.. |m_escasez_ant| image:: /fv_images/m_escasez_ant.png
+        :width: 100pt
+        :height: 100pt
+
+
+
