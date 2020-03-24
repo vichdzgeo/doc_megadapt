@@ -50,8 +50,56 @@ Funciones de valor
         :height: 100pt
 
 
+
+
+
+.. |g_escasez_cz| image:: /fv_images/g_escasez_cz.png
+       :width: 100pt
+       :height: 100pt
+
+.. |m_escasez_cz| image:: /fv_images/m_escasez_cz.png
+        :width: 100pt
+        :height: 100pt
+
+.. |g_escasez_ph| image:: /fv_images/g_escasez_ph.png
+       :width: 100pt
+       :height: 100pt
+
+.. |m_escasez_ph| image:: /fv_images/m_escasez_ph.png
+        :width: 100pt
+        :height: 100pt
+
+.. |g_escasez_fd| image:: /fv_images/g_escasez_fd.png
+       :width: 100pt
+       :height: 100pt
+
+.. |m_escasez_fd| image:: /fv_images/m_escasez_fd.png
+        :width: 100pt
+        :height: 100pt
+
+.. |g_escasez_dsa| image:: /fv_images/g_escasez_dsa.png
+       :width: 100pt
+       :height: 100pt
+
+.. |m_escasez_dsa| image:: /fv_images/m_escasez_dsa.png
+        :width: 100pt
+        :height: 100pt
+
+.. |g_escasez_ant| image:: /fv_images/g_escasez_ant.png
+       :width: 100pt
+       :height: 100pt
+
+.. |m_escasez_ant| image:: /fv_images/m_escasez_ant.png
+        :width: 100pt
+        :height: 100pt
+
+
+
+
+
 Las funciones de valor se aplican a cada uno de los criterios del estado inicial o capas geográficas para transformar los valores de una escala natural a una escala de cociente. Las funciones específicas que se aplican a cada criterio representan la connotación que los distintos valores de los criterios tienen para los agentes del modelo.
 
+Funciones de valor para el agente SACMEX:
 
 +---------------------+------------------------+------------------+------------------+---------------+
 |       capa          |         función        |   gráfica        |      mapa        | observación   |
@@ -116,3 +164,72 @@ Las funciones de valor se aplican a cada uno de los criterios del estado inicial
 |                     |                        |                  |                  | | el indice de|
 |                     |                        |                  |                  | | escasez     |
 +---------------------+------------------------+------------------+------------------+---------------+
+
+Funciones de valor para residentes:
+
++---------------------+------------------------+------------------+------------------+---------------------+
+|       capa          |         función        |   gráfica        |      mapa        | observación         |
++=====================+========================+==================+==================+=====================+
+|   calidad_agua      |  resident_fnss.R 10    |                  |                  | sin función         |
++---------------------+------------------------+------------------+------------------+---------------------+
+| crecimiento_urbano  |  resident_fnss.R 12    |                  |                  | es discreta (wf)    |
++---------------------+------------------------+------------------+------------------+---------------------+
+|  agua_insuficente   |  resident_fnss.R 21    |                  |                  | convexa_creciente   |
++---------------------+------------------------+------------------+------------------+---------------------+
+|  desperdicio_agua   |  resident_fnss.R 30    |                  |                  | es discreta (wf)    |
++---------------------+------------------------+------------------+------------------+---------------------+
+|     fugas           |  resident_fnss.R 42    |                  |                  | | es discreta (wf)  |
+|                     |                        |                  |                  | | usa la capa de    |
+|                     |                        |                  |                  | | falta_dist        |
++---------------------+------------------------+------------------+------------------+---------------------+
+|  agua_insuficente   | | resident_fnss.R 55   |                  |                  |                     |
+|                     | | value_funtions.R 126 |                  |                  |                     |
++---------------------+------------------------+------------------+------------------+---------------------+
+|     basura          | | resident_fnss.R 63   |                  |                  |                     |
+|                     | | value_funtions.R 110 |                  |                  |                     |
++---------------------+------------------------+------------------+------------------+---------------------+
+|  encharcamientos    |  resident_fnss.R 70    |                  |                  | | se usa la         |
+|                     |                        |                  |                  | | vulnerabilidad    |
+|                     |                        |                  |                  | | a inundaciones    |
++---------------------+------------------------+------------------+------------------+---------------------+
+|     salud           | | resident_fnss.R 73   |                  |                  |                     |
+|                     | | value_funtions.R 136 |                  |                  |                     |
++---------------------+------------------------+------------------+------------------+---------------------+
+
+Funciones de valor para los índices de escasez:
+
++---------------------+------------------------+------------------+------------------+---------------+
+|       capa          |         función        |   gráfica        |      mapa        | observación   |
++=====================+========================+==================+==================+===============+
+|                     | | logistica_invertida  | |g_escasez_cz|   | |m_escasez_cz|   |               |
+|   critical_zones    | | center=0.2           |                  |                  |               |
+|                     | | k=0.255              |                  |                  |               |
+|                     | | max=1                |                  |                  |               |
+|                     | | min=0                |                  |                  |               |
++---------------------+------------------------+------------------+------------------+---------------+
+|                     | | logistica            | |g_escasez_ph|   | |m_escasez_ph|   |               |
+| hydraulic_pressure  | | center=0.3           |                  |                  |               |
+|                     | | k=0.1815             |                  |                  |               |
+|                     | | max=0.9405           |                  |                  |               |
+|                     | | min=0                |                  |                  |               |
++---------------------+------------------------+------------------+------------------+---------------+
+|                     | | logistica_invertida  | |g_escasez_ant|  | |m_escasez_ant|  |               |
+| infrastructure_age  | | center=34            |                  |                  |               |
+|                     | | k=0.1325             |                  |                  |               |
+|                     | | max=64               |                  |                  |               |
+|                     | | min=4                |                  |                  |               |
++---------------------+------------------------+------------------+------------------+---------------+
+|                     | | logistica_invertida  | |g_escasez_fd|   | |m_escasez_fd|   |               |
+|   potable_lacking   | | center=0.17          |                  |                  |               |
+|                     | | k=0.083              |                  |                  |               |
+|                     | | max=1                |                  |                  |               |
+|                     | | min=0                |                  |                  |               |
++---------------------+------------------------+------------------+------------------+---------------+
+|                     | | logistica_invertida  | |g_escasez_dsa|  | |m_escasez_dsa|  |               |
+|  fix_failure_days   | | center=0             |                  |                  |               |
+|                     | | k=0.1325             |                  |                  |               |
+|                     | | max=167              |                  |                  |               |
+|                     | | min=0                |                  |                  |               |
++---------------------+------------------------+------------------+------------------+---------------+
+
+`critical_zones <http://gvf.magrat.mine.nu/critical_zones/logistica_invertida/?center=0.2&k=0.255&show_map=True&max=1&min=0>`_
