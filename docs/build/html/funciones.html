@@ -36,7 +36,7 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
-    <link rel="next" title="Escenarios de escorrentía" href="escorrentias.html" />
+    <link rel="next" title="Modelos mentales" href="supermatrices.html" />
     <link rel="prev" title="Capas geográficas" href="capas.html" /> 
 </head>
 
@@ -86,8 +86,8 @@
 <li class="toctree-l1 current"><a class="reference internal" href="entradas.html">Entradas</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="capas.html">Capas geográficas</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Funciones de valor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="escorrentias.html">Escenarios de escorrentía</a></li>
 <li class="toctree-l2"><a class="reference internal" href="supermatrices.html">Modelos mentales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="escorrentias.html">Escenarios de escorrentía</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="salidas.html">Salidas</a></li>
@@ -160,28 +160,369 @@
             
   <div class="section" id="funciones-de-valor">
 <h1>Funciones de valor<a class="headerlink" href="#funciones-de-valor" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Las funciones de valor se aplican a cada uno de los criterios del estado inicial o capas geográficas para transformar los valores de una escala natural a una escala de cociente. Las funciones específicas que se aplican a cada criterio representan la connotación que los distintos valores de los criterios tienen para los agentes del modelo.</p>
+<p>Funciones de valor para el agente SACMEX:</p>
 <table border="1" class="docutils">
 <colgroup>
-<col width="14%" />
-<col width="36%" />
-<col width="14%" />
-<col width="36%" />
+<col width="22%" />
+<col width="25%" />
+<col width="19%" />
+<col width="19%" />
+<col width="16%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">a</th>
-<th class="head">gggbgg</th>
-<th class="head">c</th>
-<th class="head">dfffff</th>
+<tr class="row-odd"><th class="head">capa</th>
+<th class="head">función</th>
+<th class="head">gráfica</th>
+<th class="head">mapa</th>
+<th class="head">observación</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>k</td>
-<td><a class="reference internal" href="_images/logo_solo.png"><img alt="logo" src="_images/logo_solo.png" style="width: 100pt; height: 100pt;" /></a></td>
-<td>k</td>
-<td><a class="reference internal" href="_images/logo_solo.png"><img alt="logo" src="_images/logo_solo.png" style="width: 100pt; height: 100pt;" /></a></td>
+<tr class="row-even"><td>antiguedad_drenaje</td>
+<td><div class="first last line-block">
+<div class="line">logistica_invertida</div>
+<div class="line">center=38.5</div>
+<div class="line">k=0.083</div>
+<div class="line">max=70</div>
+<div class="line">min=0</div>
+</div>
+</td>
+<td><a class="reference internal" href="_images/g_antiguedad_d.png"><img alt="g_antiguedad_d" src="_images/g_antiguedad_d.png" style="width: 100pt; height: 100pt;" /></a></td>
+<td><a class="reference internal" href="_images/m_antiguedad_d.png"><img alt="m_antiguedad_d" src="_images/m_antiguedad_d.png" style="width: 100pt; height: 100pt;" /></a></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>antiguedad_potable</td>
+<td><div class="first last line-block">
+<div class="line">campana_invertida</div>
+<div class="line">center=60</div>
+<div class="line">a=40</div>
+<div class="line">max=60</div>
+<div class="line">min=0</div>
+</div>
+</td>
+<td><a class="reference internal" href="_images/g_antiguedad_p.png"><img alt="g_antiguedad_p" src="_images/g_antiguedad_p.png" style="width: 100pt; height: 100pt;" /></a></td>
+<td><a class="reference internal" href="_images/m_antiguedad_p.png"><img alt="m_antiguedad_p" src="_images/m_antiguedad_p.png" style="width: 100pt; height: 100pt;" /></a></td>
+<td><div class="first last line-block">
+<div class="line">es la misma</div>
+<div class="line">capa para</div>
+<div class="line">drenaje y</div>
+<div class="line">potable</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td>calidad_agua</td>
+<td><div class="first last line-block">
+<div class="line">logistica_invertida</div>
+<div class="line">center=154</div>
+<div class="line">k=0.1325</div>
+<div class="line">max=200</div>
+<div class="line">min=20</div>
+</div>
+</td>
+<td><a class="reference internal" href="_images/g_calidad_agua.png"><img alt="g_calidad_agua" src="_images/g_calidad_agua.png" style="width: 100pt; height: 100pt;" /></a></td>
+<td><a class="reference internal" href="_images/m_calidad_agua.png"><img alt="m_calidad_agua" src="_images/m_calidad_agua.png" style="width: 100pt; height: 100pt;" /></a></td>
+<td><div class="first last line-block">
+<div class="line">en el gpk</div>
+<div class="line">está entre</div>
+<div class="line">0.7 y 1</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td>presion_hidraulica</td>
+<td><div class="first last line-block">
+<div class="line">logistica</div>
+<div class="line">center=0.3</div>
+<div class="line">k=0.1815</div>
+<div class="line">max=1</div>
+<div class="line">min=0</div>
+</div>
+</td>
+<td><a class="reference internal" href="_images/g_pres_hid.png"><img alt="g_pres_hid" src="_images/g_pres_hid.png" style="width: 100pt; height: 100pt;" /></a></td>
+<td><a class="reference internal" href="_images/m_pres_hid.png"><img alt="m_pres_hid" src="_images/m_pres_hid.png" style="width: 100pt; height: 100pt;" /></a></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>subsidencia</td>
+<td><div class="first last line-block">
+<div class="line">logistica_invertida</div>
+<div class="line">center=12.5475</div>
+<div class="line">k=0.1325</div>
+<div class="line">max=35.85</div>
+<div class="line">min=0</div>
+</div>
+</td>
+<td><a class="reference internal" href="_images/g_subsidencia.png"><img alt="g_subsidencia" src="_images/g_subsidencia.png" style="width: 100pt; height: 100pt;" /></a></td>
+<td><a class="reference internal" href="_images/m_subsidencia.png"><img alt="m_subsidencia" src="_images/m_subsidencia.png" style="width: 100pt; height: 100pt;" /></a></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>falla_escasez</td>
+<td><div class="first last line-block">
+<div class="line">convexa_creciente</div>
+<div class="line">gama=0.01975</div>
+<div class="line">max=348.395</div>
+<div class="line">min=0</div>
+<div class="line"><br /></div>
+</div>
+</td>
+<td><a class="reference internal" href="_images/g_falla_escasez.png"><img alt="g_falla_escasez" src="_images/g_falla_escasez.png" style="width: 100pt; height: 100pt;" /></a></td>
+<td><a class="reference internal" href="_images/m_falla_escasez.png"><img alt="m_falla_escasez" src="_images/m_falla_escasez.png" style="width: 100pt; height: 100pt;" /></a></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>peticion_delegaciones</td>
+<td>1 - x</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>capa de 1s</td>
+</tr>
+<tr class="row-odd"><td>basura</td>
+<td>value_funtions.R 110</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>falta_dist</td>
+<td>value_funtions.R 126</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>salud</td>
+<td>value_funtions.R 136</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>presion_medios</td>
+<td>value_funtions.R 152</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>edad_infra_p(m)</td>
+<td>sacmex_dtss.R 65</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>edad_infra_p(n)</td>
+<td>sacmex_dtss.R 74</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>capa de 1s</td>
+</tr>
+<tr class="row-odd"><td>capcidad_p</td>
+<td>sacmex_dtss.R 77</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>capa de 1s</td>
+</tr>
+<tr class="row-even"><td>falla_dist</td>
+<td>sacmex_dtss.R 80</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>monto</td>
+<td>sacmex_dtss.R 104</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>capa de 1s</td>
+</tr>
+<tr class="row-even"><td>escesez</td>
+<td>sacmex_dtss.R 127</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><div class="first last line-block">
+<div class="line">directo</div>
+<div class="line">el indice de</div>
+<div class="line">escasez</div>
+</div>
+</td>
 </tr>
 </tbody>
 </table>
+<p>Funciones de valor para residentes:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="21%" />
+<col width="24%" />
+<col width="18%" />
+<col width="18%" />
+<col width="21%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">capa</th>
+<th class="head">función</th>
+<th class="head">gráfica</th>
+<th class="head">mapa</th>
+<th class="head">observación</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>calidad_agua</td>
+<td>resident_fnss.R 10</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>sin función</td>
+</tr>
+<tr class="row-odd"><td>crecimiento_urbano</td>
+<td>resident_fnss.R 12</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>es discreta (wf)</td>
+</tr>
+<tr class="row-even"><td>agua_insuficente</td>
+<td>resident_fnss.R 21</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>convexa_creciente</td>
+</tr>
+<tr class="row-odd"><td>desperdicio_agua</td>
+<td>resident_fnss.R 30</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>es discreta (wf)</td>
+</tr>
+<tr class="row-even"><td>fugas</td>
+<td>resident_fnss.R 42</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><div class="first last line-block">
+<div class="line">es discreta (wf)</div>
+<div class="line">usa la capa de</div>
+<div class="line">falta_dist</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td>agua_insuficente</td>
+<td><div class="first last line-block">
+<div class="line">resident_fnss.R 55</div>
+<div class="line">value_funtions.R 126</div>
+</div>
+</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>basura</td>
+<td><div class="first last line-block">
+<div class="line">resident_fnss.R 63</div>
+<div class="line">value_funtions.R 110</div>
+</div>
+</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>encharcamientos</td>
+<td>resident_fnss.R 70</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><div class="first last line-block">
+<div class="line">se usa la</div>
+<div class="line">vulnerabilidad</div>
+<div class="line">a inundaciones</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td>salud</td>
+<td><div class="first last line-block">
+<div class="line">resident_fnss.R 73</div>
+<div class="line">value_funtions.R 136</div>
+</div>
+</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p>Funciones de valor para los índices de escasez:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="22%" />
+<col width="25%" />
+<col width="19%" />
+<col width="19%" />
+<col width="16%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">capa</th>
+<th class="head">función</th>
+<th class="head">gráfica</th>
+<th class="head">mapa</th>
+<th class="head">observación</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>critical_zones</td>
+<td><div class="first last line-block">
+<div class="line">logistica_invertida</div>
+<div class="line">center=0.2</div>
+<div class="line">k=0.255</div>
+<div class="line">max=1</div>
+<div class="line">min=0</div>
+</div>
+</td>
+<td><a class="reference internal" href="_images/g_escasez_cz.png"><img alt="g_escasez_cz" src="_images/g_escasez_cz.png" style="width: 100pt; height: 100pt;" /></a></td>
+<td><a class="reference internal" href="_images/m_escasez_cz.png"><img alt="m_escasez_cz" src="_images/m_escasez_cz.png" style="width: 100pt; height: 100pt;" /></a></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>hydraulic_pressure</td>
+<td><div class="first last line-block">
+<div class="line">logistica</div>
+<div class="line">center=0.3</div>
+<div class="line">k=0.1815</div>
+<div class="line">max=0.9405</div>
+<div class="line">min=0</div>
+</div>
+</td>
+<td><a class="reference internal" href="_images/g_escasez_ph.png"><img alt="g_escasez_ph" src="_images/g_escasez_ph.png" style="width: 100pt; height: 100pt;" /></a></td>
+<td><a class="reference internal" href="_images/m_escasez_ph.png"><img alt="m_escasez_ph" src="_images/m_escasez_ph.png" style="width: 100pt; height: 100pt;" /></a></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>infrastructure_age</td>
+<td><div class="first last line-block">
+<div class="line">logistica_invertida</div>
+<div class="line">center=34</div>
+<div class="line">k=0.1325</div>
+<div class="line">max=64</div>
+<div class="line">min=4</div>
+</div>
+</td>
+<td><a class="reference internal" href="_images/g_escasez_ant.png"><img alt="g_escasez_ant" src="_images/g_escasez_ant.png" style="width: 100pt; height: 100pt;" /></a></td>
+<td><a class="reference internal" href="_images/m_escasez_ant.png"><img alt="m_escasez_ant" src="_images/m_escasez_ant.png" style="width: 100pt; height: 100pt;" /></a></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>potable_lacking</td>
+<td><div class="first last line-block">
+<div class="line">logistica_invertida</div>
+<div class="line">center=0.17</div>
+<div class="line">k=0.083</div>
+<div class="line">max=1</div>
+<div class="line">min=0</div>
+</div>
+</td>
+<td><a class="reference internal" href="_images/g_escasez_fd.png"><img alt="g_escasez_fd" src="_images/g_escasez_fd.png" style="width: 100pt; height: 100pt;" /></a></td>
+<td><a class="reference internal" href="_images/m_escasez_fd.png"><img alt="m_escasez_fd" src="_images/m_escasez_fd.png" style="width: 100pt; height: 100pt;" /></a></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>fix_failure_days</td>
+<td><div class="first last line-block">
+<div class="line">logistica_invertida</div>
+<div class="line">center=0</div>
+<div class="line">k=0.1325</div>
+<div class="line">max=167</div>
+<div class="line">min=0</div>
+</div>
+</td>
+<td><a class="reference internal" href="_images/g_escasez_dsa.png"><img alt="g_escasez_dsa" src="_images/g_escasez_dsa.png" style="width: 100pt; height: 100pt;" /></a></td>
+<td><a class="reference internal" href="_images/m_escasez_dsa.png"><img alt="m_escasez_dsa" src="_images/m_escasez_dsa.png" style="width: 100pt; height: 100pt;" /></a></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p><a class="reference external" href="http://gvf.magrat.mine.nu/critical_zones/logistica_invertida/?center=0.2&amp;k=0.255&amp;show_map=True&amp;max=1&amp;min=0">critical_zones</a></p>
 </div>
 
 
@@ -192,7 +533,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="escorrentias.html" class="btn btn-neutral float-right" title="Escenarios de escorrentía" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="supermatrices.html" class="btn btn-neutral float-right" title="Modelos mentales" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="capas.html" class="btn btn-neutral float-left" title="Capas geográficas" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
